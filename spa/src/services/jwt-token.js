@@ -1,6 +1,6 @@
 import SessionStorage from './session-storage';
 import {Jwt} from './resources';
-
+//Handle all auth methods
 export default {
     get token() {
         return SessionStorage.get('token')

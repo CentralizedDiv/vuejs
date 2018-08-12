@@ -2,6 +2,7 @@ import Vue from 'vue';
 import JwtToken from './jwt-token';
 import store from '../store';
 import router from '../router';
+//Intercept all requests
 
 Vue.http.interceptors.push((request, next) => {
     request.headers.set('Authorization', JwtToken.getAuthorizationHeader());

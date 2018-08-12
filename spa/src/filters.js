@@ -1,5 +1,5 @@
 import Vue from 'vue';
 
-Vue.filter('saldo', time => time.gm - time.gs);
+//Use this to make simple operation in texts/numbers
 
 Vue.filter('ucwords', value => value.charAt(0).toUpperCase() + value.slice(1));

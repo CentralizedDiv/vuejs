@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueResource from 'vue-resource';
-
+//Comiunicate with backend
 Vue.use(VueResource);
 require('./interceptors');
 
@@ -17,6 +17,5 @@ export class Jwt{
     }
 }
 
-const Time = Vue.resource('http://localhost:8000/api/times');
 const User = Vue.resource('http://localhost:8000/api/user')
-export {Time,User};
+export {User};

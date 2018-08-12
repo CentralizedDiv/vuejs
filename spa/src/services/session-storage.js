@@ -1,3 +1,4 @@
+//handle session
 export default {
     set(key, value){
         window.sessionStorage[key] = value;

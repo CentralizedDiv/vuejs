@@ -1,13 +1,12 @@
-import TimeListComponent from './components/TimeList.vue';
-import TimeJogoComponent from './components/TimeJogo.vue';
-import TimeZonaComponent from './components/TimeZona.vue';
+import FirstScreenComponent from './components/FirstScreen.vue';
+import SecondScreenComponent from './components/SecondScreen.vue';
 import LoginComponent from './components/Login.vue';
 import LogoutComponent from './components/Logout.vue';
 
 export default [
     {
         name: 'auth.login',
-        path: '/login',
+        path: '/',
         component: LoginComponent,
         meta: {auth: false}
     },
@@ -18,21 +17,15 @@ export default [
         meta: {auth: true}
     },
     {
-        name: 'time.list',
-        path: '/times',
-        component: TimeListComponent,
+        name: 'screen.first',
+        path: '/first',
+        component: FirstScreenComponent,
         meta: {auth: true}
     },
     {
-        name: 'time.jogo',
-        path: '/times/jogo',
-        component: TimeJogoComponent,
-        meta: {auth: true}
-    },
-    {
-        name: 'time.zona',
-        path: '/times/zona',
-        component: TimeZonaComponent,
+        name: 'screen.second',
+        path: '/second',
+        component: SecondScreenComponent,
         meta: {auth: true}
     }
 ];
